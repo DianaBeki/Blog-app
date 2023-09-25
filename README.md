@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Blog app</b></h1>
+  <h1><b>Blog App</b></h1>
 
 </div>
 
@@ -10,7 +10,7 @@
 
 ## 📗 Table of Contents
 
-- [📖 Blog-app ](#-Create a Blog-app in RubyonRails )
+- [📖 Blog-App ](#-Create a Blog-app in RubyonRails )
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Blog app <a name="about-project"></a>
+# 📖 Blog App <a name="about-project"></a>
 
 **Blog App** 
 Blog-app is a dynamic website that not only presents a curated list of engaging posts but also encourages active reader participation through comments and post likes. 
