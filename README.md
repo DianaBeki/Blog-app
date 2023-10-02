@@ -93,6 +93,23 @@ it will install the required gemfile for running the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Usage
+
+To run the project, you will need to execute:
+
+
+```sh
+  rails server
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+
+```sh
+  Rspec spec or bundle exec rspec spec
+```
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="author"></a>
