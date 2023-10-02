@@ -102,7 +102,6 @@ To run the project, you will need to execute:
   rails server
 ```
 
-
 ### Run tests
 
 To run tests, run the following command:
