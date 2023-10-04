@@ -1,6 +1,3 @@
 <section class="container">
-  <% @users.each do |user| %>
-    <%= render partial: 'user_info', locals: { user: user } %>
-  <% end %>
+  <%= render @users %>
 </section>
-
