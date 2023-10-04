@@ -18,9 +18,9 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [🚀 Presentation Video](#Video)
     - [Install](#install)
     - [Usage](#usage)
+      - [Run tests](#run-tests)
   - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -110,9 +110,11 @@ To run tests, run the following command:
 ```sh
   Rspec spec or bundle exec rspec spec
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="author"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Diana Beki**
 - GitHub: [@Github](https://github.com/DianaBeki)
