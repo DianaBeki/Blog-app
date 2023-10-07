@@ -19,11 +19,14 @@
     <p><%= comment.user.name %>: <%= comment.text %></P>
     <% end %>
     <p class="add-p"><%= link_to "Add Comment", new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id) %>
+<p class="add-p">
+<%= link_to "Add like 👍", user_post_likes_path(user_id: @post.author_id, post_id: @post.id), method: :post %>
+</p>
 </div>
 
 <div class="like">
-<%= form_with url: user_post_likes_path(@post.author, @post), method: :post do |form| %>
-  <%= form.submit "Like", class:"like-btn"%>
+<%= form_with url: user_post_likes_path(@post.author, @post), method: :post do |f| %>
+  <%= f.submit 'Like post' %>
 <% end %>
 </div>
 </section>

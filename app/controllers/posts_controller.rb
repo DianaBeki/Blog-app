@@ -15,15 +15,20 @@ class PostsController < ApplicationController
   end
 
   def create
-    @user = current_user
-    @post = @user.posts.build(post_params)
+    @post = Post.new(post_params)
+    @post.comments_counter = 0
+    @post.likes_counter = 0
+    @post.author = current_user
 
     if @post.save
-      redirect_to user_post_url(@user, @post)
+      # Increment the user's posts_counter
+      current_user.increment!(:posts_counter)
 
+      flash[:notice] = 'Post was successfully created'
+      redirect_to users_path
     else
-      flash.now[:error] = 'Oops, something went wrong'
-      redirect_to new_post_url
+      flash.now[:error] = 'An error has occurred. Post could not be created, Please try again later.'
+      render :new
     end
   end
 
