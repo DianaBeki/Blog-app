@@ -15,8 +15,6 @@ RSpec.describe 'posts#show', type: :feature do
       @post3 = Post.create(author: @user, title: 'User Post 3', text: 'This is User Post 3', likes_counter: 0,
                            comments_counter: 0)
     ]
-
-    # visit user_posts_url(user_id: @user.id)
   end
   describe '#show page' do
     before(:each) do

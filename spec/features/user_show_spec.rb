@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'User show page', type: :feature do
-  # let(:user) { User.create(name: 'Diana', photo: 'https://example.com/path-to-image.jpg', bio: 'Web Developer', posts_counter: 3) }
   before(:each) do
     @diana = User.create(name: 'Diana', photo: 'https://dianalinktophoto.jpg', bio: 'be the diffrence',
                          posts_counter: 0)
@@ -22,7 +21,6 @@ RSpec.describe 'User show page', type: :feature do
       visit user_path(@diana)
     end
     it "can see the user's profile picture" do
-      #  expect(page).to have_css("img[src*='#{@diana.photo}']")
       expect(page).to have_xpath("//img[contains(@src,'https://dianalinktophoto.jpg')]")
     end
 
@@ -45,7 +43,6 @@ RSpec.describe 'User show page', type: :feature do
     end
 
     it "can see a button that lets me view all of a user's posts" do
-      # expect(page).to have_link('See All Posts', href: user_posts_path(@diana), class: 'btn center-btn')
       expect(page).to have_content 'See all posts'
     end
 

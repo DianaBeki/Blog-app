@@ -38,16 +38,10 @@ RSpec.describe 'posts#index', type: :feature do
     end
 
     it 'can see posts title' do
-      # @posts.each do |post|
-      #   expect(page).to have_content(post.title.to_s)
-      # end
       expect(page).to have_content 'User Post 1'
     end
 
     it 'can see some of the body of the post' do
-      # @posts.each do |post|
-      #   expect(page).to have_content(post.text.to_s)
-      # end
       expect(page).to have_content 'This is User Post 1'
     end
 
@@ -69,6 +63,10 @@ RSpec.describe 'posts#index', type: :feature do
       @posts.each do |post|
         expect(page).to have_content(post.likes_counter.to_s)
       end
+    end
+
+    it 'can a section of pagination if there are more posts than fit on the view' do
+      expect(page).to have_content 'Pagination'
     end
   end
 
