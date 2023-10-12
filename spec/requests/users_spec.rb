@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
+  before do
+    @user = User.create(name: 'Sam', photo: 'photo.url', bio: 'Excellent', posts_counter: 0)
+  end
   describe 'GET/index' do
     before do
       get users_url
@@ -15,14 +18,15 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'responds with the correct body' do
-      expect(response.body).to include('List of users')
+      expect(response.body).to include('Sam')
     end
   end
 
   # show action
   describe 'GET/show' do
     before do
-      get user_url(1)
+      # get user_url(1)
+      get "/users/#{@user.id}"
     end
 
     it 'responds with http success' do
@@ -34,7 +38,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'responds with the correct body' do
-      expect(response.body).to include('Details of a selected user')
+      expect(response.body).to include('Number of posts')
     end
   end
 end

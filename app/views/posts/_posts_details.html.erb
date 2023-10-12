@@ -1,4 +1,4 @@
 <div class="post-details">
-  <h3><%= post.title %></h3>
+  <h2><%= link_to post.title, user_post_url(user.id, post.id) %></h2>
   <p><%= post.text %></p>
 </div>
