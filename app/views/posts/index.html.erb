@@ -1,8 +1,6 @@
 <section class="container">
 <article class="users-article">
-<div class="photo">
-<%= image_tag("user.svg", alt: "User") %>
-</div>
+<div class="photo"><img src=<%= @user.photo %> alt=<%= @user.name %>></div>
 <div class="details">
  <h2><%= @user.name %></h2>
   <p>Number of posts: <%= @user.posts_counter %></p>
@@ -11,7 +9,7 @@
 
 <% @posts.each do |post| %>
     <article class="post-comment">
-    <%= render partial: 'posts_details', locals: { post: post } %>
+    <%= render partial: 'posts_details', locals: { user: @user, post: post } %>
 
   <div class="comment-cont">
   <% post.recent_comments.each do |comment| %>

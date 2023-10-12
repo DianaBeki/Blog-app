@@ -3,9 +3,9 @@ RSpec.describe 'User Index Page', type: :feature do
   before(:each) do
     @users = [
       @user1 = User.create(
-        name: 'Ruby',
-        photo: 'https://avatars.githubusercontent.com/u/112550568?v=4',
-        bio: 'C# Developer from India.',
+        name: 'Diana',
+        photo: 'https://unsplash.com/photos/2eC_-0yRrGU',
+        bio: 'C# Developer from Kenya.',
         posts_counter: 6
       ),
       @user2 = User.create(
