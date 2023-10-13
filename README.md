@@ -142,10 +142,10 @@ To run tests, run the following command:
  - Views.
  - Forms.
  - Integration specs for Views and fixing n+1 problems.
- - Add Devise.
  - Add authorization rules.
  - Add API endpoints.
  - API documentation.
+ - Add Devise.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
