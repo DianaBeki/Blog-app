@@ -12,6 +12,7 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.consider_all_requests_local = true
 
   # Enable server timing
@@ -52,7 +53,7 @@ Rails.application.configure do
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
-
+  
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 

@@ -11,7 +11,7 @@
 
 ## 📗 Table of Contents
 
-- [📖 Blog-App ](#-Create a Blog-app in RubyonRails )
+- [📖 Blog-App ](#-about-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -121,7 +121,7 @@ To run tests, run the following command:
 - Twitter: [@Twitter](https://twitter.com/home)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/diana-beki/)
 
- 👤 : **Yusuf Sholotan**
+👤 : **Yusuf Sholotan**
 - GitHub: [@yin-ka](https://github.com/yin-ka)
 - LinkedIn: [Yusuf Sholotan](https://www.linkedin.com/in/yusuf-sholotan/)
 
@@ -135,17 +135,9 @@ To run tests, run the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
- - Validations and Model specs.
- - Processing data in models.
- - Controllers.
- - Controllers specs.
- - Views.
- - Forms.
- - Integration specs for Views and fixing n+1 problems.
- - Add Devise.
- - Add authorization rules.
- - Add API endpoints.
- - API documentation.
+ - Authorization.
+ - API Endpoints.
+ - User Management System.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

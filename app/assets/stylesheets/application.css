@@ -220,3 +220,46 @@ a {
   width: 150px;
   text-align: center;
 }
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-h2,
+.log-h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #940b92;
+  line-height: 40px;
+}
+
+.input-field {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+}
+
+.label-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: #940b92;
+  margin-left: 10px;
+}
+
+.sign-btn,
+.log-btn {
+  background-color: #940b92;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border: none;
+}
+
+.sign-btn:hover {
+  background-color: black;
+}
