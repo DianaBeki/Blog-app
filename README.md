@@ -121,7 +121,7 @@ To run tests, run the following command:
 - Twitter: [@Twitter](https://twitter.com/home)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/diana-beki/)
 
- 👤 : **Yusuf Sholotan**
+👤 : **Yusuf Sholotan**
 - GitHub: [@yin-ka](https://github.com/yin-ka)
 - LinkedIn: [Yusuf Sholotan](https://www.linkedin.com/in/yusuf-sholotan/)
 
